@@ -12,11 +12,11 @@
 
     <!-- CONFIRMATION EMAIL⤴ -->
     <div
-        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
         <div>
             <div style="margin-bottom: 48px;"><img class="alignnone size-full wp-image-7866"
-                    src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt="" width="130"
-                    height="47" />
+                    src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" />
             </div>
             <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
             <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Te has
@@ -26,8 +26,8 @@
 
             <div style="margin-left: auto; margin-right: auto;">
                 <div style="text-align: center;"><a onmouseover="this.style.background = '#f74516'"
-                    onmouseout="this.style.background = '#ff5e34'"
-                        style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: left; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex; padding: 11px 35px 11px 36px; justify-content: center; align-items: center;"
+                        onmouseout="this.style.background = '#ff5e34'"
+                        style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: center; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex; padding: 11px 35px 11px 36px; justify-content: center; align-items: center;"
                         href="{{home_url}}/{{ur_login}}?ur_token={{email_token}}">Verificar Cuenta</a></div>
             </div>
             <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
@@ -38,11 +38,11 @@
 
     <!-- CORREO ELECTRóNICO REGISTRADO CORRECTAMENTE -->
     <div
-        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
         <div>
             <div style="margin-bottom: 48px;">
-                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt="" width="130" height="47"
-                    class="alignnone size-full wp-image-7866" />
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" class="alignnone size-full wp-image-7866" />
             </div>
             </p>
             <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
@@ -54,7 +54,7 @@
             <div style="margin-left: auto; margin-right: auto;">
                 <div style="text-align: center;">
                     <a href="{{home_url}}" onmouseover="this.style.background = '#f74516'"
-                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: left; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
+                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: center; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
                     padding: 11px 35px 11px 36px;
                     justify-content: center;
                     align-items: center; ">Ir a la tienda</a>
@@ -66,6 +66,161 @@
             </p>
         </div>
     </div>
+
+    <!-- CORREO ELECTRóNICO DEL ADMINISTRADOR⤴ -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
+        <div>
+            <div style="margin-bottom: 48px;">
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" class="alignnone size-full wp-image-7866" />
+            </div>
+            </p>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hi Admin,</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Un nuevo
+                {{username}} - {{email}} se ha registrado exitosamente en su sitio <a
+                    style="text-decoration: none; color: #ff5e34;" href="{{home_url}}">{{blog_info}}</a>. Revise la
+                función del usuario y los detalles en el menú 'Usuarios' en su panel de WP.
+            </p>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+            </p>
+        </div>
+    </div>
+
+
+    <!--ORIGINAL - CORREO ELECTRóNICO DEL ADMINISTRADOR⤴ -->
+    <!-- Hi Admin, <br/>
+
+					A new user {{username}} - {{email}} has successfully registered to your site <a href="{{home_url}}">{{blog_info}}</a>. <br/>
+
+					Please review the user role and details at '<b>Users</b>' menu in your WP dashboard. <br/><br />
+					Thank You! -->
+
+    <!-- AWAITING ADMIN APPROVAL EMAIL⤴ -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
+        <div>
+            <div style="margin-bottom: 48px;">
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" class="alignnone size-full wp-image-7866" />
+            </div>
+            </p>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Te has
+                registrado en <a style="text-decoration: none; color: #ff5e34;" href="{{home_url}}">{{blog_info}}</a>.
+                Espere hasta que el administrador del sitio apruebe su registro. Se le notificará después de que se
+                apruebe.
+            </p>
+            <div style="margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <a href="{{home_url}}" onmouseover="this.style.background = '#f74516'"
+                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: center; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
+                    padding: 11px 35px 11px 36px;
+                    justify-content: center;
+                    align-items: center; ">Ir a la tienda</a>
+                </div>
+                </p>
+            </div>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <!-- ORIGINAL - AWAITING ADMIN APPROVAL EMAIL⤴ -->
+    <!-- Hi {{username}},
+
+
+You have registered on {{blog_info}}.
+
+
+Please wait until the site admin approves your registration. You will be notified after it is approved.
+
+
+Thank You! -->
+
+    <!-- REGISTRATION APPROVED EMAIL⤴ -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
+        <div>
+            <div style="margin-bottom: 48px;">
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" class="alignnone size-full wp-image-7866" />
+            </div>
+            </p>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Tu
+                registro en <a style="text-decoration: none; color: #ff5e34;" href="{{home_url}}">{{blog_info}}</a> ha
+                sido aprobado.
+            </p>
+            <div style="margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <a href="{{home_url}}" onmouseover="this.style.background = '#f74516'"
+                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: center; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
+                    padding: 11px 35px 11px 36px;
+                    justify-content: center;
+                    align-items: center; ">Ir a la tienda</a>
+                </div>
+                </p>
+            </div>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <!-- ORIGINAL - REGISTRATION APPROVED EMAIL⤴ -->
+    <!-- Hola {{username}},
+
+
+Tu registro en {{blog_info}} ha sido aprobado.
+
+
+Por favor, visita la página 'Mi cuenta' para editar los detalles de tu cuenta y crear tu perfil de usuario en {{blog_info}}.
+
+
+¡Gracias! -->
+
+    <!--REGISTRATION DENIED EMAIL⤴  -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666; border: 1px solid #666;">
+        <div>
+            <div style="margin-bottom: 48px;">
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt=""
+                    width="130" height="47" class="alignnone size-full wp-image-7866" />
+            </div>
+            </p>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Te has registrado en <a style="text-decoration: none; color: #ff5e34;" href="{{home_url}}">{{blog_info}}</a>. <br> Desafortunadamente, tu registro ha sido denegado. Disculpa por las molestias.
+            </p>
+            <div style="margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <a href="{{home_url}}" onmouseover="this.style.background = '#f74516'"
+                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: center; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
+                    padding: 11px 35px 11px 36px;
+                    justify-content: center;
+                    align-items: center; ">Ir a la tienda</a>
+                </div>
+                </p>
+            </div>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+            </p>
+        </div>
+    </div>
+
+    <!-- ORIGINAL - REGISTRATION DENIED EMAIL⤴ -->
+    <!-- Hola {{username}},
+
+
+Te has registrado en {{blog_info}}.
+
+
+Desafortunadamente, tu registro ha sido denegado. Disculpa por las molestias.
+
+
+¡Gracias! -->
 </body>
 
 </html>
