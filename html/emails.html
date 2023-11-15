@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./email.css"> -->
+</head>
+
+<body>
+
+    <!-- CONFIRMATION EMAIL⤴ -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
+        <div>
+            <div style="margin-bottom: 48px;"><img class="alignnone size-full wp-image-7866"
+                    src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt="" width="130"
+                    height="47" />
+            </div>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Te has
+                registrado en <a style="text-decoration: none; color: #ff5e34;" href="{{home_url}}">{{blog_info}}</a>.
+                Por
+                favor, haz clic en verificar cuenta para confirmar el registro.</p>
+
+            <div style="margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;"><a onmouseover="this.style.background = '#f74516'"
+                    onmouseout="this.style.background = '#ff5e34'"
+                        style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: left; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex; padding: 11px 35px 11px 36px; justify-content: center; align-items: center;"
+                        href="{{home_url}}/{{ur_login}}?ur_token={{email_token}}">Verificar Cuenta</a></div>
+            </div>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+        </div>
+    </div>
+
+
+    <!-- CORREO ELECTRóNICO REGISTRADO CORRECTAMENTE -->
+    <div
+        style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
+        <div>
+            <div style="margin-bottom: 48px;">
+                <img src="https://g1wwshpcha.onrocket.site/wp-content/uploads/2023/10/logo-vini-quiz.svg" alt="" width="130" height="47"
+                    class="alignnone size-full wp-image-7866" />
+            </div>
+            </p>
+            <p style="font: 700 20px 'Helvetica-Bold', sans-serif;">Hola {{username}},</p>
+            <p style="margin-bottom: 48px; font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">Has
+                completado correctamente el registro de usuario de <a style="text-decoration: none; color: #ff5e34;"
+                    href="{{home_url}}">{{blog_info}}</a>. Ya puedes empezar a usar la nueva manera de disfrutar del
+                vino.
+            </p>
+            <div style="margin-left: auto; margin-right: auto;">
+                <div style="text-align: center;">
+                    <a href="{{home_url}}" onmouseover="this.style.background = '#f74516'"
+                        onmouseout="this.style.background = '#ff5e34'" style="background: #ff5e34; color: #ffffff; border-radius: 4px; text-align: left; font: 400 16px 'Helvetica-Regular', sans-serif; text-decoration: none; display: inline-flex;
+                    padding: 11px 35px 11px 36px;
+                    justify-content: center;
+                    align-items: center; ">Ir a la tienda</a>
+                </div>
+                </p>
+            </div>
+            <p style="font: 400 16px 'Helvetica-Regular', sans-serif; color: #00000080;">¡Gracias! <br />El Equipo vini
+            </p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
